@@ -1,0 +1,127 @@
+:root{
+  --biru: #3A4885;
+  --abu-abu: #d6d5d5;
+  --putih: #EAEAEA;
+}
+
+a{
+  text-decoration: none;
+}
+
+.btn-biru{
+  background-color: var(--biru);
+  border-radius: 8px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.text-biru{
+  color: var(--biru);
+}
+
+.login-page {
+  margin: 0;
+  background-color: var(--putih);
+  overflow: hidden;
+  font-family: "Source Sans 3", sans-serif;
+}
+
+.login-image {
+  height: 100vh;
+  border-right: 8px solid var(--biru);
+}
+
+.logo-biru{
+  width: 180px;
+}
+
+.card-login {
+  border-radius: 14px;
+  border-top: 5px solid var(--biru);
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+	background-color: #fff;
+  box-shadow: 13px 13px 20px #ced0d1, -13px -13px 20px #faf6f6;
+}
+
+.line{
+  margin-left: -24px !important;
+  margin-right: -24px !important;
+
+}
+
+.input-group .form-control{
+  border-radius: 0 8px 8px 0;
+  background-color: var(--abu-abu);
+  border: none;
+}
+
+.input-group .input-group-text{
+  border-radius: 8px 0 0 8px;
+  background-color: var(--abu-abu);
+  border: none;
+}
+
+.form-check-input{
+  background-color: var(--abu-abu);
+  border: #fff;
+}
+
+.form-check-input:checked + .form-check-label {
+  color: var(--biru);
+  font-weight: 700;
+}
+
+.form-check-input:checked{
+  background-color: #3A4885;
+}
+
+.form-control:focus {
+  outline: none !important;
+  box-shadow: none;
+}
+
+.form-check-input:focus{
+  outline: none !important;
+  box-shadow: none;
+}
+
+.btn-biru:focus{
+  outline: none !important;
+  box-shadow: none;
+}
+
+.btn-biru:active{
+  transform: scale(0.9);
+}
+
+.input-group {
+  position: relative;
+}
+
+.input-group .fas {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+/* Media Queries */
+
+@media (max-width: 767px) {
+  .container-fluid {
+    padding: 0 !important;
+  }
+
+  .login-page{
+    overflow-y: visible;
+  }
+
+  .login-image {
+		display: none;
+    /* border-right: none;
+    border-bottom: 8px solid var(--biru);
+    height: 200px; */
+  }
+} 
